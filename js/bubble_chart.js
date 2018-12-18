@@ -192,34 +192,34 @@ function bubbleChart() {
     // return yearCenters[d.country].x;
     let remainder = countryToPopulateWithData.indexOf(d.country) % 3;
     if(remainder === 0) {
-      return width / 3;
-    } else if (remainder === 1) {
-      return width / 2;
-    } else {
-      return 2 * width / 3;
-    }
+        return (width * 0.5) / 3;
+      } else if (remainder === 1) {
+        return (width * 1.5) / 3;
+      } else {
+        return (width * 2.5) / 3;
+      }
   }
 
   function nodeTechPosX(d) {
     let remainder = techListForBubble.indexOf(d.name) % 3;
     if(remainder === 0) {
-      return width / 3;
+      return (width * 0.5) / 3;
     } else if (remainder === 1) {
-      return width / 2;
+      return (width * 1.5) / 3;
     } else {
-      return 2 * width / 3;
+      return (width * 2.5) / 3;
     }
   }
 
   function nodePosX(name, list) {
     let remainder = list.indexOf(name) % 3;
     if(remainder === 0) {
-      return width / 3;
-    } else if (remainder === 1) {
-      return width / 2;
-    } else {
-      return 2 * width / 3;
-    }
+        return (width * 0.5) / 3;
+      } else if (remainder === 1) {
+        return (width * 1.5) / 3;
+      } else {
+        return (width * 2.5) / 3;
+      }
   }
 
   function nodeCountryPosY(d) {
