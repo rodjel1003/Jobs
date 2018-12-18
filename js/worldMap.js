@@ -8,12 +8,12 @@
     corr = 0;
 
     var projectionGlobe = d3.geoOrthographic()
-    .scale(300)
+    .scale(mapWidth/4.55)
     .translate([mapWidth / 2, mapHeight / 2])
     .clipAngle(90);
 
     var projectionMap = d3.geoEquirectangular()
-    .scale(200)
+    .scale(mapWidth/6.83)
     .translate([mapWidth / 2, mapHeight / 2]);
 
     var projection = projectionGlobe;
