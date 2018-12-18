@@ -1,0 +1,212 @@
+html, body {
+	overflow-x: hidden
+}
+
+body {
+	overflow: hidden !important;
+	width: 100%;
+	height: 100%;
+	background-color: #0E0B16;
+}
+
+@
+-ms-viewport {
+	width: device-width;
+}
+
+#map {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+.country {
+	justify-content: center;
+	width: 300px;
+}
+
+.badge {
+	background-color: #A239CA;
+	color: #FFFFFF !important;
+}
+
+.jobsData li {
+	background-color: #E7DFDD;
+}
+
+#jobsModal {
+	border-radius: 10px;
+	height: 70%;
+}
+
+#countryList li a {
+	color: #000000;
+}
+
+.show-jobs-button-container {
+	position: absolute;
+	bottom: 10px;
+	left: 50vw;
+	transform: translateX(-50%);
+}
+
+.rr-d-flex {
+	display: flex;
+}
+
+.rr-flex-direction-row-reverse {
+	flex-direction: row-reverse;
+}
+
+/* .infoLabel, .zoneTooltip {
+  background-color: #A239CA;
+  color: #FFFFFF;
+} */
+.rr-margin-auto {
+	margin: auto !important;
+}
+
+.rr-margin-bottom-30px {
+	margin: 30px;
+}
+
+.rr-margin-left-0 {
+	margin-left: 0;
+}
+
+.badge {
+	margin-left: 10px !important;
+}
+
+#map>svg {
+	background: #0E0B16;
+	pointer-events: all;
+}
+
+.btn {
+	background-color: #4717F6;
+}
+
+.btn .material-icons {
+	margin-right: 10px;
+}
+
+.btn:hover {
+	background-color: #6b45f7;
+}
+
+.btn:focus {
+	background-color: #3812c4;
+}
+
+.zone {
+	stroke-width: .5px;
+	stroke-linejoin: round;
+	cursor: pointer;
+}
+
+.zoneTooltip {
+	position: absolute;
+	display: none;
+	pointer-events: none;
+	/* background: #fff; */
+	padding: 3px;
+	text-align: left;
+	border: solid #ccc 1px;
+	/* color: #666; */
+	background-color: #A239CA;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.infoLabel {
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	display: none;
+	border: solid #ccc 1px;
+	/* color: #666; */
+	/* background: #FFFFFF; */
+	background-color: #A239CA;
+	color: #FFFFFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 3px #66C2FF;
+	-moz-box-shadow: 0px 0px 3px #66C2FF;
+	box-shadow: 0px 0px 3px #66C2FF;
+	text-align: left;
+	padding: 2px;
+	font-size: 12px;
+	font-family: sans-serif;
+	pointer-events: none;
+}
+
+.infoLabel span {
+	margin: 0px 5px;
+}
+
+.mapData {<!--
+	fill: #0082c8; -->
+	stroke: #ffffff;
+	stroke-width: 1px;
+}
+
+.mapData.selected {
+	fill: #E7DFDD;
+}
+
+.mapData.ortho {<!--
+	fill: #0082c8; -->
+	stroke: #E6E6E6;
+	stroke-width: 1px;
+}
+
+.mapData:hover {
+	fill: #E7DFDD;
+}
+
+.focused {
+	fill: #FF7519;
+}
+
+.loading-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	background-color: #0E0B16;
+	flex-direction: column;
+}
+
+.loading-text {
+	color: #FFFFFF;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar, #countryList::-webkit-scrollbar, #jobsModal::-webkit-scrollbar
+	{
+	width: 12px;
+}
+
+::-webkit-scrollbar-track, #countryList::-webkit-scrollbar-track,
+	#jobsModal::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb, #countryList::-webkit-scrollbar-thumb,
+	#jobsModal::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	background-color: #E7DFDD;
+}
