@@ -79,12 +79,13 @@ body {
 }
 
 #map>svg {
-	background: #0E0B16;
+	background: #07050b;
 	pointer-events: all;
 }
 
 .btn {
 	background-color: #4717F6;
+	font-size: 0.9vw;
 }
 
 .btn .material-icons {
