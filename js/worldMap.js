@@ -290,7 +290,7 @@ function ready(error, world, countryData) {
 		.attr("class", "sphere")
 		.attr("d", path)
 		.attr("fill", "#0E0B16")
-		.attr("stroke", "#A239CA");
+		.attr("stroke", "#4717F6");
 	}
 
 
