@@ -60,7 +60,7 @@ function prepareJobsData(callback) {
 
 	countryToPopulateWithData.forEach(function(d) {
 		let countryName = d.split(' ').join('%2B');
-		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&count=50&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
+		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&count=200&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
 
 
 
@@ -136,15 +136,15 @@ function ready(error, world, countryData) {
 
 		if(jobsByCountry === undefined) {
 			return "#000000";
-		} else if(jobsByCountry.length < 1) {
+		} else if(jobsByCountry.length < 10) {
 			return "#7e5cf8";
-		} else if(jobsByCountry.length < 4) {
+		} else if(jobsByCountry.length < 50) {
 			return "#592ef6";
-		} else if(jobsByCountry.length < 6) {
+		} else if(jobsByCountry.length < 100) {
 			return "#4717f6";
-		} else if(jobsByCountry.length < 9) {
+		} else if(jobsByCountry.length < 150) {
 			return "#3812c4";
-		} else if(jobsByCountry.length < 11) {
+		} else if(jobsByCountry.length < 200) {
 			return "#2a0d93";
 		} else {
 			return "#1c0962";
