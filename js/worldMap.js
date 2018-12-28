@@ -54,7 +54,7 @@ function sleep(milliseconds) {
 
 let jobsData = {};
 //let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Vietnam", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates", "Indonesia", "Taiwan", "Italy"];
-let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates", "Italy"];
+let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates"];
 function prepareJobsData(callback) {
 
 
