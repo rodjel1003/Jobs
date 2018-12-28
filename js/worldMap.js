@@ -60,7 +60,7 @@ function prepareJobsData(callback) {
 
 	countryToPopulateWithData.forEach(function(d) {
 		let countryName = d.split(' ').join('%2B');
-		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&count=200&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
+		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&count=250&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
 
 
 
