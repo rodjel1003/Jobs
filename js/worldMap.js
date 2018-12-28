@@ -53,13 +53,14 @@ function sleep(milliseconds) {
 }
 
 let jobsData = {};
-let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Vietnam", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates", "Indonesia", "Taiwan", "Italy"];
+//let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Vietnam", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates", "Indonesia", "Taiwan", "Italy"];
+let countryToPopulateWithData = ["Germany", "Netherlands", "Sweden", "Denmark", "Japan", "Belgium", "Austria", "Australia", "Canada", "United States", "United Kingdom", "France", "New Zealand", "Switzerland", "China", "Thailand", "Malaysia", "Mexico", "Ireland", "Spain", "Finland", "Poland", "Estonia", "United Arab Emirates", "Italy"];
 function prepareJobsData(callback) {
 
 
 	countryToPopulateWithData.forEach(function(d) {
 		let countryName = d.split(' ').join('%2B');
-		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
+		d3.json("https://api.rss2json.com/v1/api.json?api_key=7ljbnfrdxovotfzlndazd1kxxtlyqizkcy5ot0kt&count=50&rss_url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2Ffeed%3Fl%3D"+ countryName +"%26u%3DKm%26d%3D20%26v%3Dtrue", function(error, data) {
 
 
 
